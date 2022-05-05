@@ -1,0 +1,70 @@
+.tree {
+  font-family: Segoe UI;
+}
+.tag {
+  background-color: #efefef;
+  border: 1px dashed black;
+  border-radius: 5px;
+  padding: 0px 0px;
+  margin-right: 5px;
+  display: inline-block;
+  width: 35px;
+  text-align: center;
+  font-size: 0.8em;
+}
+.tag2 {
+  background-color: #c4f0ff;
+  padding: 0px 3px;
+  margin-right: 5px;
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  font-size: 0.8em;
+  font-variant: small-caps;
+  border: 1px solid #ccc
+}
+.tag3 {
+  font-weight: 600;
+}
+.tree ul {
+  margin-left: 0px;
+}
+
+.tree li {
+  list-style-type: none;
+  margin: 10px;
+  position: relative;
+  padding: 0 5px;
+}
+
+.tree li::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -20px;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-radius: 0 0 0 0px;
+  width: 20px;
+  height: 15px;
+}
+
+.tree li::after {
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: -20px;
+  border-left: 1px solid #000;
+  border-top: 1px solid #000;
+  border-radius: 0px 0 0 0;
+  width: 20px;
+  height: 100%;
+}
+
+.tree li:last-child::after {
+  display: none;
+}
+
+/* .tree li:last-child:before {
+  border-radius: 0 0 0 0px;
+} */
